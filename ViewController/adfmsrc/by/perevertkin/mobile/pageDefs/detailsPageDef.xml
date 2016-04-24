@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.3.2.1" id="detailsPageDef"
+                Package="by.perevertkin.mobile.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="root" RangeSize="25" DataControl="ServiceResultDC" id="ServiceResultDCIterator"/>
+    <accessorIterator MasterBinding="ServiceResultDCIterator" Binds="post" RangeSize="25" DataControl="ServiceResultDC"
+                      BeanClass="by.perevertkin.mobile.serviceresult.ServiceResult" id="postIterator"/>
+    <accessorIterator MasterBinding="ServiceResultDCIterator" Binds="serviceResult" RangeSize="25"
+                      DataControl="ServiceResultDC" BeanClass="by.perevertkin.mobile.serviceresult.ServiceResult"
+                      id="serviceResultIterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="postIterator" id="id">
+      <AttrNames>
+        <Item Value="id"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="postIterator" id="userId">
+      <AttrNames>
+        <Item Value="userId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="postIterator" id="title">
+      <AttrNames>
+        <Item Value="title"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="postIterator" id="body">
+      <AttrNames>
+        <Item Value="body"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="serviceResultIterator" id="id1">
+      <AttrNames>
+        <Item Value="id"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="serviceResultIterator" id="userId1">
+      <AttrNames>
+        <Item Value="userId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="serviceResultIterator" id="title1">
+      <AttrNames>
+        <Item Value="title"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="serviceResultIterator" id="body1">
+      <AttrNames>
+        <Item Value="body"/>
+      </AttrNames>
+    </attributeValues>
+  </bindings>
+</pageDefinition>

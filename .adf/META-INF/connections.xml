@@ -1,0 +1,12 @@
+<References xmlns="http://xmlns.oracle.com/adf/jndi">
+  <Reference name="jsonplaceholder" className="oracle.adf.model.connection.rest.RestConnection" xmlns="">
+    <Factory className="oracle.adf.model.connection.rest.RestConnectionFactory"/>
+    <RefAddresses>
+      <XmlRefAddr addrType="jsonplaceholder">
+        <Contents>
+          <restconnection name="jsonplaceholder" url="http://jsonplaceholder.typicode.com"/>
+        </Contents>
+      </XmlRefAddr>
+    </RefAddresses>
+  </Reference>
+</References>

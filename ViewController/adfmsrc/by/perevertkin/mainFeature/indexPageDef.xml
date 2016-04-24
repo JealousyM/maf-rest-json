@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.3.2.1" id="indexPageDef"
+                Package="by.perevertkin.mainFeature">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="root" RangeSize="25" DataControl="ServiceResultDC" id="ServiceResultDCIterator"/>
+    <accessorIterator MasterBinding="ServiceResultDCIterator" Binds="result" RangeSize="25"
+                      DataControl="ServiceResultDC" BeanClass="by.perevertkin.mobile.serviceresult.ServiceResult"
+                      id="resultIterator"/>
+    <accessorIterator MasterBinding="ServiceResultDCIterator" Binds="allResults" RangeSize="25"
+                      DataControl="ServiceResultDC" BeanClass="by.perevertkin.mobile.serviceresult.ServiceResult"
+                      id="allResultsIterator"/>
+    <accessorIterator MasterBinding="ServiceResultDCIterator" Binds="serviceResults" RangeSize="25"
+                      DataControl="ServiceResultDC" BeanClass="by.perevertkin.mobile.serviceresult.ServiceResult"
+                      id="serviceResultsIterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="resultIterator" id="result">
+      <nodeDefinition DefName="by.perevertkin.mobile.serviceresult.ServiceResult" Name="result0">
+        <AttrNames>
+          <Item Value="id"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <tree IterBinding="allResultsIterator" id="allResults">
+      <nodeDefinition DefName="by.perevertkin.mobile.serviceresult.ServiceResult" Name="allResults0">
+        <AttrNames>
+          <Item Value="id"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <tree IterBinding="serviceResultsIterator" id="serviceResults">
+      <nodeDefinition DefName="by.perevertkin.mobile.serviceresult.ServiceResult" Name="serviceResults0">
+        <AttrNames>
+          <Item Value="id"/>
+          <Item Value="userId"/>
+          <Item Value="title"/>
+          <Item Value="body"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <tree IterBinding="serviceResultsIterator" id="serviceResults1">
+      <nodeDefinition DefName="by.perevertkin.mobile.serviceresult.ServiceResult" Name="serviceResults10">
+        <AttrNames>
+          <Item Value="id"/>
+          <Item Value="userId"/>
+          <Item Value="title"/>
+          <Item Value="body"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

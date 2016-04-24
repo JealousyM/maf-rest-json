@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<amx:view xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:amx="http://xmlns.oracle.com/adf/mf/amx"
+          xmlns:dvtm="http://xmlns.oracle.com/adf/mf/amx/dvt">
+  <amx:panelPage id="pp1">
+    <amx:facet name="header">
+      <amx:outputText value="Header" id="ot1"/>
+    </amx:facet>
+    <amx:facet name="primary">
+      <amx:commandButton id="Back" action="back"/>
+    </amx:facet>
+    <amx:facet name="secondary">
+    </amx:facet>
+    <amx:panelFormLayout id="pfl1">
+      <amx:inputText value="#{bindings.id.inputValue}" label="#{bindings.id.hints.label}" id="it4"/>
+      <amx:inputText value="#{bindings.userId.inputValue}" label="#{bindings.userId.hints.label}" id="it1"/>
+      <amx:inputText value="#{bindings.title.inputValue}" label="#{bindings.title.hints.label}" id="it3"/>
+      <amx:inputText value="#{bindings.body.inputValue}" label="#{bindings.body.hints.label}" id="it2"/>
+    </amx:panelFormLayout>
+  </amx:panelPage>
+</amx:view>

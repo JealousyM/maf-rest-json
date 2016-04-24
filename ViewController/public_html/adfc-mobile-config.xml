@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<adfc-mobile-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.0">
+  <managed-bean id="__1">
+    <managed-bean-name>MainBean</managed-bean-name>
+    <managed-bean-class>by.perevertkin.mobile.beans.MainBean</managed-bean-class>
+    <managed-bean-scope>view</managed-bean-scope>
+  </managed-bean>
+</adfc-mobile-config>
