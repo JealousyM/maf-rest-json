@@ -40,15 +40,5 @@
         </AttrNames>
       </nodeDefinition>
     </tree>
-    <tree IterBinding="serviceResultsIterator" id="serviceResults1">
-      <nodeDefinition DefName="by.perevertkin.mobile.serviceresult.ServiceResult" Name="serviceResults10">
-        <AttrNames>
-          <Item Value="id"/>
-          <Item Value="userId"/>
-          <Item Value="title"/>
-          <Item Value="body"/>
-        </AttrNames>
-      </nodeDefinition>
-    </tree>
   </bindings>
 </pageDefinition>

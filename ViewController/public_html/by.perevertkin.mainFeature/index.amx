@@ -18,7 +18,7 @@
       <amx:listItem id="li1" action="#{viewScope.MainBean.getPost}">
         <amx:outputText  value="Title: #{row.title}" id="ot2"/>
         <amx:outputText value="Body: #{row.body}" id="ot3"/>
-        <amx:setPropertyListener id="spl1" from="#{row.id}" to="#{viewScope.MainBean.postId}"/>
+        <amx:setPropertyListener id="spl1" from="#{row.id}" to="#{pageFlowScope.postId}"/>
       </amx:listItem>
     </amx:listView>
   </amx:panelPage>

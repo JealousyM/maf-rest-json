@@ -12,42 +12,22 @@
                       id="serviceResultIterator"/>
   </executables>
   <bindings>
-    <attributeValues IterBinding="postIterator" id="id">
+    <attributeValues IterBinding="serviceResultIterator" id="id">
       <AttrNames>
         <Item Value="id"/>
       </AttrNames>
     </attributeValues>
-    <attributeValues IterBinding="postIterator" id="userId">
+    <attributeValues IterBinding="serviceResultIterator" id="userId">
       <AttrNames>
         <Item Value="userId"/>
       </AttrNames>
     </attributeValues>
-    <attributeValues IterBinding="postIterator" id="title">
+    <attributeValues IterBinding="serviceResultIterator" id="title">
       <AttrNames>
         <Item Value="title"/>
       </AttrNames>
     </attributeValues>
-    <attributeValues IterBinding="postIterator" id="body">
-      <AttrNames>
-        <Item Value="body"/>
-      </AttrNames>
-    </attributeValues>
-    <attributeValues IterBinding="serviceResultIterator" id="id1">
-      <AttrNames>
-        <Item Value="id"/>
-      </AttrNames>
-    </attributeValues>
-    <attributeValues IterBinding="serviceResultIterator" id="userId1">
-      <AttrNames>
-        <Item Value="userId"/>
-      </AttrNames>
-    </attributeValues>
-    <attributeValues IterBinding="serviceResultIterator" id="title1">
-      <AttrNames>
-        <Item Value="title"/>
-      </AttrNames>
-    </attributeValues>
-    <attributeValues IterBinding="serviceResultIterator" id="body1">
+    <attributeValues IterBinding="serviceResultIterator" id="body">
       <AttrNames>
         <Item Value="body"/>
       </AttrNames>

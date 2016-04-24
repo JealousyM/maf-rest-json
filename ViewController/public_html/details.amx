@@ -6,15 +6,23 @@
       <amx:outputText value="Header" id="ot1"/>
     </amx:facet>
     <amx:facet name="primary">
-      <amx:commandButton id="Back" action="back"/>
+      <amx:commandButton id="Back"  action="back" text="Back"/>
     </amx:facet>
     <amx:facet name="secondary">
     </amx:facet>
     <amx:panelFormLayout id="pfl1">
-      <amx:inputText value="#{bindings.id.inputValue}" label="#{bindings.id.hints.label}" id="it4"/>
-      <amx:inputText value="#{bindings.userId.inputValue}" label="#{bindings.userId.hints.label}" id="it1"/>
-      <amx:inputText value="#{bindings.title.inputValue}" label="#{bindings.title.hints.label}" id="it3"/>
-      <amx:inputText value="#{bindings.body.inputValue}" label="#{bindings.body.hints.label}" id="it2"/>
+      <amx:panelLabelAndMessage label="#{bindings.id.hints.label}" id="plam3">
+        <amx:outputText value="#{bindings.id.inputValue}" id="ot4"/>
+      </amx:panelLabelAndMessage>
+      <amx:panelLabelAndMessage label="#{bindings.userId.hints.label}" id="plam4">
+        <amx:outputText value="#{bindings.userId.inputValue}" id="ot5"/>
+      </amx:panelLabelAndMessage>
+      <amx:panelLabelAndMessage label="#{bindings.title.hints.label}" id="plam2">
+        <amx:outputText value="#{bindings.title.inputValue}" id="ot3"/>
+      </amx:panelLabelAndMessage>
+      <amx:panelLabelAndMessage label="#{bindings.body.hints.label}" id="plam1">
+        <amx:outputText value="#{bindings.body.inputValue}" id="ot2"/>
+      </amx:panelLabelAndMessage>
     </amx:panelFormLayout>
   </amx:panelPage>
 </amx:view>

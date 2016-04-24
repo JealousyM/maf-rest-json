@@ -2,6 +2,11 @@
 <adfc-mobile-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.0">
   <task-flow-definition id="rest-maf-task-flow">
     <default-activity>index</default-activity>
+    <managed-bean id="__5">
+      <managed-bean-name>MainBean</managed-bean-name>
+      <managed-bean-class>by.perevertkin.mobile.beans.MainBean</managed-bean-class>
+      <managed-bean-scope>view</managed-bean-scope>
+    </managed-bean>
     <view id="index">
       <page>/by.perevertkin.mainFeature/index.amx</page>
     </view>
